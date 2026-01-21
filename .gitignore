@@ -22,3 +22,44 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+### Maven ###
+.mvn/
+.jpb/
+.settings/
+.springBeans
+mvnw
+mvnw.cmd
+*.class
+*.jar
+*/target/
+.project
+.classpath
+.factorypath
+*/.classpath
+*/.project
+*.iml
+.idea/*
+.vscode/*
+.DS_Store
+log4j.xml
+*.pid
+*.wav
+studio/*
+/.fastRequest/
+testDemo
+MyDebugFilter.java
+
+### IDEA ###
+.idea/*
+*.iml
+*/target/*
+*/*.iml
+*/*.yml
+*.pid
+/.gradle/
+*.log
+.run/*
+/.vscode/settings.json
+/Java代码规范.md
+.qoder/*
