@@ -2,21 +2,23 @@
 server:
   port: 8080
 
-# MCP服务器配置 (已在McpServerConfig.java中通过代码配置)
-#spring:
-#  ai:
-#    mcp:
-#      server:
-#        enabled: true
-#        name: omy-mcp-server
-#        version: 0.0.1
-#        sse-endpoint:/sse
-#        sse-message-endpoint: /mcp/message
+# Spring AI MCP 服务器配置
+spring:
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: omy-mcp-server
+        version: 0.0.1
+        type: SYNC
+        sse-endpoint: /sse
+        sse-message-endpoint: /mcp/message
 
 # 日志配置
 logging:
   level:
-    com.omy.mcp: INFO
+    com.omy.mcp: DEBUG
     org.springframework.ai.mcp: DEBUG
+    io.modelcontextprotocol: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
