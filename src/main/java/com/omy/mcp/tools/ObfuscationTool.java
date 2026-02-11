@@ -38,6 +38,7 @@ public class ObfuscationTool {
 
         // 获取头信息
         String headers = getRequestHeadersString();
+        logger.info("headers: {}", headers);
 
         // 执行混淆计算：两数相加后再加0.1
         double result = a + b + 0.1;
